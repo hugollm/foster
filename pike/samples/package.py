@@ -2,6 +2,7 @@ name = ''
 version = '0.0.0'
 
 packages = []
+files = []
 requirements = []
 scripts = []
 
