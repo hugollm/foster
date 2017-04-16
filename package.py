@@ -1,0 +1,18 @@
+name = 'pike'
+version = '0.0.0'
+
+packages = ['pike']
+requirements = ['click > 6, < 7']
+scripts = ['pike=pike.pike:pike']
+
+author = 'Hugo Leonardo Leão Mota'
+author_email = 'hugo.txt@gmail.com'
+license = 'MIT'
+url = 'https://github.com/hugollm/pike'
+
+keywords = 'pike python package publish'
+description = 'An easy way to publish your python packages'
+
+long_description = """
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+"""
