@@ -7,7 +7,7 @@ from pike.init import create_package_file
 class InitTestCase(TestCase):
 
     def setUp(self):
-        root = os.path.join(os.path.dirname(__file__), 'project')
+        root = os.path.join(os.path.dirname(__file__), 'frames', 'init')
         self.target = os.path.join(root, 'package.py')
         os.chdir(root)
 
