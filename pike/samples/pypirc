@@ -1,0 +1,10 @@
+[distutils]
+index-servers=
+    staging
+    production
+
+[staging]
+repository = https://testpypi.python.org/pypi
+
+[production]
+repository = https://pypi.python.org/pypi
