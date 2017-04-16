@@ -2,7 +2,8 @@ name = 'pike'
 version = '0.0.0'
 
 packages = ['pike']
-requirements = ['click > 6, < 7']
+files = ['pike/samples', 'LICENSE']
+requirements = ['click >= 6, < 7', 'Jinja2 >= 2, < 3']
 scripts = ['pike=pike.pike:pike']
 
 author = 'Hugo Leonardo Leão Mota'
