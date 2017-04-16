@@ -1,6 +1,6 @@
 import os
 from unittest import TestCase
-
+from click import ClickException
 from pike.init import create_package_file
 
 
@@ -23,6 +23,7 @@ class InitTestCase(TestCase):
 
     def test_create_package_dont_overwrite_existing_file(self):
         open(self.target, 'a').close()
-        create_package_file()
+        with self.assertRaises(ClickException):
+            create_package_file()
         with open(self.target, 'rb') as f:
             self.assertEqual(f.read(), b'')

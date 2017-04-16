@@ -10,7 +10,7 @@ def init():
 
 def create_package_file():
     if os.path.exists('package.py'):
-        return click.secho('ERROR: pike refuses to overwrite existing package.py', err=True, fg='red')
+        raise click.ClickException('pike refuses to overwrite existing package.py')
     shutil.copy(source_path(), 'package.py')
     click.secho('OK: package.py', fg='green')
 
