@@ -6,6 +6,9 @@ import click
 
 @click.command()
 def init():
+    create_package_file()
+
+def create_package_file():
     if os.path.exists('package.py'):
         return click.secho('ERROR: pike refuses to overwrite existing package.py', err=True, fg='red')
     shutil.copy(source_path(), 'package.py')

@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -z "$@" ]; then
+    python -m unittest tests
+else
+    python -m unittest $@
+fi
