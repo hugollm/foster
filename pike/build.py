@@ -12,6 +12,7 @@ from .utils import copy_sample, render_sample
 def build():
     settings = get_settings_from_package_file()
     create_boilerplate_files(settings)
+    remove_old_dist_directory()
     run_setup()
     remove_boilerplate_files(settings)
 
@@ -53,6 +54,10 @@ def create_manifest_file(settings):
                 f.write('include ' + item + '\n')
             elif os.path.isdir(item):
                 f.write('recursive-include ' + item + ' *' + '\n')
+
+def remove_old_dist_directory():
+    if os.path.isdir('dist'):
+        shutil.rmtree('dist')
 
 def run_setup():
     call(['python', 'setup.py', 'sdist', 'bdist_wheel', '--universal'])
