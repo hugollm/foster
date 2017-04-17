@@ -3,8 +3,8 @@ version = '0.0.0'
 
 packages = ['pike']
 files = ['pike/samples', 'LICENSE']
-requirements = ['click >= 6, < 7', 'twine >= 1, < 2']
-scripts = ['pike=pike.pike:pike']
+requirements = ['twine >= 1, < 2']
+scripts = ['pike=pike.main:run']
 
 author = 'Hugo Leonardo Leão Mota'
 author_email = 'hugo.txt@gmail.com'

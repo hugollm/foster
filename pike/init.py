@@ -1,19 +1,13 @@
 import os.path
-import shutil
 
-import click
+from .command import Command
+from .utils import copy_sample
 
 
-@click.command()
-def init():
-    create_package_file()
+class Init(Command):
 
-def create_package_file():
-    if os.path.exists('package.py'):
-        raise click.ClickException('pike refuses to overwrite existing package.py')
-    shutil.copy(source_path(), 'package.py')
-    click.secho('OK: package.py', fg='green')
-
-def source_path():
-    pike_dir = os.path.dirname(__file__)
-    return os.path.join(pike_dir, 'samples', 'package.py')
+    def run(self):
+        if os.path.exists('package.py'):
+            self.abort('ABORT: will not overwrite existing package.py')
+        copy_sample('package.py', 'package.py')
+        self.echo('OK: package.py')
