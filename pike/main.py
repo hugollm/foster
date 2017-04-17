@@ -5,6 +5,7 @@ from .init import Init
 from .build import Build
 from .register import Register
 from .publish import Publish
+from .test import Test
 
 
 class Main(Command):
@@ -14,6 +15,7 @@ class Main(Command):
         'build': Build,
         'register': Register,
         'publish': Publish,
+        'test': Test,
     }
 
     def run(self, args=None):
