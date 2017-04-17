@@ -1,7 +1,6 @@
 import os.path
 import shutil
-
-from jinja2 import Environment, FileSystemLoader
+from string import Template
 
 
 PIKE_DIR = os.path.dirname(__file__)
@@ -15,7 +14,9 @@ def copy_sample(sample, target):
     source = os.path.join(SAMPLES_DIR, sample)
     shutil.copy(source, target)
 
-def render_sample(template, **kwargs):
-    env = Environment(loader=FileSystemLoader(SAMPLES_DIR))
-    template = env.get_template(template)
-    return template.render(**kwargs)
+def render_sample(sample, **kwargs):
+    source = os.path.join(SAMPLES_DIR, sample)
+    with open(source, 'r') as f:
+        text = f.read()
+    template = Template(text)
+    return template.substitute(kwargs)

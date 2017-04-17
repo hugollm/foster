@@ -3,7 +3,7 @@ version = '0.0.0'
 
 packages = ['pike']
 files = ['pike/samples', 'LICENSE']
-requirements = ['click >= 6, < 7', 'Jinja2 >= 2, < 3', 'twine >= 1, < 2']
+requirements = ['click >= 6, < 7', 'twine >= 1, < 2']
 scripts = ['pike=pike.pike:pike']
 
 author = 'Hugo Leonardo Leão Mota'
