@@ -42,6 +42,7 @@ class Main(Command):
         self.echo('build               Reads the package.py file and builds the package')
         self.echo('register ENV        Register the built package with PyPI (staging or production)')
         self.echo('publish ENV         Uploads the built package to PyPI (staging or production)')
+        self.echo('test PACKAGE        Installs the specified PACKAGE from the staging server (with pip)')
 
     def _run_command(self, command_key, args):
         command_class = self.commands.get(command_key)
