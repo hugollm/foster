@@ -6,7 +6,8 @@ from .utils import sample_path
 
 class Test(Command):
 
-    def run(self, package=None):
-        if not package:
+    def run(self, *args):
+        if not args:
             self.abort('ABORT: missing PACKAGE argument')
-        call(['pip install -i https://testpypi.python.org/pypi ' + package], shell=True)
+        args = ' '.join(args)
+        call(['pip install -i https://testpypi.python.org/pypi ' + args], shell=True)
