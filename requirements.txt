@@ -1,1 +1,2 @@
+coverage
 twine >= 1, < 2

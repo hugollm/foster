@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -z "$@" ]; then
-    python -m unittest -b tests
+    python -m unittest tests
 else
-    python -m unittest -b $@
+    python -m unittest $@
 fi
