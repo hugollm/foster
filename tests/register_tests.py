@@ -2,8 +2,8 @@ from unittest import TestCase
 import os
 import shutil
 
-from pike.build import Build
-from pike.register import Register
+from foster.build import Build
+from foster.register import Register
 
 
 class RegisterTestCase(TestCase):

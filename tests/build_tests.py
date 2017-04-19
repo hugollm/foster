@@ -2,7 +2,7 @@ from unittest import TestCase
 import os
 import shutil
 
-from pike.build import Build
+from foster.build import Build
 
 
 class BuildTestCase(TestCase):

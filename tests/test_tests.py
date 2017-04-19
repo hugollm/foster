@@ -2,8 +2,8 @@ from unittest import TestCase
 import os
 import shutil
 
-from pike.build import Build
-from pike.test import Test
+from foster.build import Build
+from foster.test import Test
 
 
 class TestTestCase(TestCase):

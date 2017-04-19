@@ -1,19 +1,20 @@
-name = 'pike'
+name = 'foster'
 version = '0.0.0'
 
-packages = ['pike']
-files = ['pike/samples', 'LICENSE']
+packages = ['foster']
+files = ['foster/samples', 'LICENSE']
 requirements = ['twine >= 1, < 2']
-scripts = ['pike=pike.main:run']
+scripts = ['foster=foster.main:run']
 
 author = 'Hugo Leonardo Leão Mota'
 author_email = 'hugo.txt@gmail.com'
 license = 'MIT'
-url = 'https://github.com/hugollm/pike'
+url = 'https://github.com/hugollm/foster'
 
-keywords = 'pike python package publish'
+keywords = 'foster python package build publish'
 description = 'An easy way to publish your python packages'
 
 long_description = """
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Foster is a thin wrapper around setup tools and twine, making it easier to build and publish python
+packages.
 """

@@ -1,17 +1,18 @@
-# Pike
+# Foster
 
-An easy way to publish your python packages.
+Foster is a thin wrapper around setuptools and twine, making it easier to build and publish
+python packages.
 
 
 ## Quick start
 
-Install pike:
+Install foster:
 
-    pip install pike
+    pip install foster
 
 Init your package settings:
 
-    pike init
+    foster init
 
 This will create a `package.py` file in your current directory (this should be the root of your project). Edit the file with your package information. Example:
 
@@ -41,17 +42,17 @@ If you're not using some of the fields, like `files` or `scripts` for instance, 
 
 Next, build your package dist:
 
-    pike build
+    foster build
 
 Register your new package in the PyPI test environment:
 
-    pike register staging
+    foster register staging
 
 Change `staging` for `production` when you're ready for the real deal. The `register` command just need to be called the first time.
 
 Finally, publish your package to the PyPI test environment:
 
-    pike publish staging
+    foster publish staging
 
 Again, change `staging` for `production` when you're done testing.
 
@@ -59,7 +60,11 @@ Packages uploaded to the PyPI's test environment can be tested with:
 
     pip install -i https://testpypi.python.org/pypi myproject
 
+Or, more easily:
+
+    foster test myproject
+
 If your package has dependencies, you'll have to install them from the standard repository first:
 
     pip install Jinja2
-    pip install -i https://testpypi.python.org/pypi myproject
+    foster test myproject

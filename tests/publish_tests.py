@@ -2,8 +2,8 @@ from unittest import TestCase
 import os
 import shutil
 
-from pike.build import Build
-from pike.publish import Publish
+from foster.build import Build
+from foster.publish import Publish
 
 
 class RegisterTestCase(TestCase):

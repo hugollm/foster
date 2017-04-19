@@ -1,2 +1,2 @@
 #!/bin/bash
-python -m pike.main $@
+python -m foster.main $@

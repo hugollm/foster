@@ -1,6 +1,7 @@
 import os
 from unittest import TestCase
-from pike.init import Init
+
+from foster.init import Init
 
 
 class InitTestCase(TestCase):

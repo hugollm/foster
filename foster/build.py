@@ -40,7 +40,6 @@ class Build(Command):
         return {key: getattr(module, key) for key in keys}
 
     def create_setup_file(self, settings):
-        pike_dir = os.path.dirname(__file__)
         setup = render_sample('setup.py', **settings)
         with open('setup.py', 'w') as target:
             target.write(setup)
