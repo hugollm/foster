@@ -2,6 +2,8 @@
 
 Foster care for your python projects. This tool is a simple way to build and publish your packages to PyPI, making them available for a `pip install`.
 
+[![Build Status](https://travis-ci.org/hugollm/foster.svg?branch=master)](https://travis-ci.org/hugollm/foster)
+[![Coverage Status](https://coveralls.io/repos/github/hugollm/foster/badge.svg?branch=master)](https://coveralls.io/github/hugollm/foster?branch=master)
 
 ## Quickstart
 
