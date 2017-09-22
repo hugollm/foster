@@ -4,7 +4,7 @@ index-servers=
     production
 
 [staging]
-repository = https://testpypi.python.org/pypi
+repository = https://test.pypi.org/legacy/
 
 [production]
-repository = https://pypi.python.org/pypi
+repository = https://upload.pypi.org/legacy/
