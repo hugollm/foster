@@ -37,7 +37,14 @@ class Build(Command):
             'description',
             'long_description',
         ]
-        return {key: getattr(module, key) for key in keys}
+        settings = {key: self.escape_quotes(getattr(module, key)) for key in keys}
+        return settings
+
+    def escape_quotes(self, value):
+        if isinstance(value, str):
+            value = value.replace("'", "\\'")
+            value = value.replace('"', '\\"')
+        return value
 
     def create_setup_file(self, settings):
         setup = render_sample('setup.py', **settings)
