@@ -10,4 +10,4 @@ class Test(Command):
         if not args:
             self.abort('ABORT: missing PACKAGE argument')
         args = ' '.join(args)
-        call(['pip install -i https://testpypi.python.org/pypi ' + args], shell=True)
+        call(['pip install -i https://test.pypi.org/simple/ ' + args], shell=True)
