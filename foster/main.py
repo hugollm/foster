@@ -3,7 +3,6 @@ import sys
 from .command import Command
 from .init import Init
 from .build import Build
-from .register import Register
 from .publish import Publish
 from .test import Test
 
@@ -13,7 +12,6 @@ class Main(Command):
     commands = {
         'init': Init,
         'build': Build,
-        'register': Register,
         'publish': Publish,
         'test': Test,
     }
@@ -40,7 +38,6 @@ class Main(Command):
         self.echo('')
         self.echo('init                Create a package.py file in your current directory')
         self.echo('build               Reads the package.py file and builds the package')
-        self.echo('register ENV        Register the built package with PyPI (staging or production)')
         self.echo('publish ENV         Uploads the built package to PyPI (staging or production)')
         self.echo('test PACKAGE        Installs the specified PACKAGE from the staging server (with pip)')
 
