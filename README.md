@@ -58,17 +58,11 @@ Next, build your package (this will create a `dist` directory):
 
     foster build
 
-Register your new package in the PyPI test environment:
-
-    foster register staging
-
-Change `staging` for `production` when you're ready for the real deal. The `register` command just need to be called the first time (to "claim" the project name).
-
 Finally, publish your package to the PyPI test environment:
 
     foster publish staging
 
-Again, change `staging` for `production` when you're done testing.
+Change `staging` for `production` when you're ready for the real deal.
 
 Packages uploaded to the PyPI's test environment can be tested with:
 
