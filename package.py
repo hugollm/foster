@@ -1,5 +1,5 @@
 name = 'foster'
-version = '0.0.0'
+version = '0.1.0'
 
 packages = ['foster']
 files = ['foster/samples', 'LICENSE']
@@ -15,6 +15,5 @@ keywords = 'foster python package build publish'
 description = 'An easy way to publish your python packages'
 
 long_description = """
-Foster is a thin wrapper around setup tools and twine, making it easier to build and publish python
-packages.
+Foster is a thin wrapper around twine, making it easier to build and publish python packages.
 """
