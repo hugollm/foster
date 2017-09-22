@@ -66,7 +66,7 @@ Change `staging` for `production` when you're ready for the real deal.
 
 Packages uploaded to the PyPI's test environment can be tested with:
 
-    pip install -i https://testpypi.python.org/pypi myproject
+    pip install -i https://test.pypi.org/simple/ myproject
 
 Or, more easily:
 
